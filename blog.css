@@ -1,0 +1,587 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para dispositivos de pantalla pequeña */
+
+ @media screen and (max-width: 768px) {
+
+    .nombre {
+        font-size: 4vw;
+    }
+
+    header{
+        display: flex;
+        background-color: black;
+        height: 15vh;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .navega{
+        justify-content: flex-end;
+      }
+    
+    @font-face {
+        font-family: encabezado;
+        src: url(Poiret_One/PoiretOne-Regular.ttf);
+    }
+    
+    header .enca{
+        white-space: nowrap;
+        align-items: center;
+        display: flex; 
+    }
+    .logo,.nombre{
+        flex: 1;
+    }
+    .nombre{
+        padding: 10px;
+        display: flex;
+        color: white;
+        font-family: encabezado;
+        font-weight: normal;
+        font-size: 2.5vw;
+    }
+    .logo{
+        height: 10vh;
+        max-height: 100%;
+    }
+    nav{
+        white-space: nowrap;
+        align-items: center;
+        display: flex;
+        flex: 1;   
+    }
+    
+    .idioma{
+        padding: 15px;
+        text-decoration: none;
+        font-weight: normal;
+        font-size: 1.5vw;
+    }
+    .nav-link,.idioma{
+        color: white;
+        font-family: encabezado;
+    }
+    .nav-link{
+        padding-left: 5%;
+        text-decoration: none;
+        font-size: 2.5vw;
+    }
+    .playa{
+        margin: 5%;
+        height: 20vh;
+        border-radius: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Izq{
+        
+        display: flex;
+        flex-direction: column;
+        margin: 50px auto;
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        border-radius: 5px;
+        height: 30vh;
+    }
+
+    .Titulo h2{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: encabezado;
+        color: white;
+    }
+
+    .wrapper{
+        margin: 50px auto;
+        background:black ;
+        color: white;
+        border-radius: 5px;
+        width: 70%;
+        min-height: 300px;
+        padding: 10px;
+    }
+
+    .cent{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .wrapper #form .inputBox{
+        margin: 10px auto;
+    }
+    
+    .wrapper #form .inputBox input[type="text"],
+    .wrapper #form .inputBox textarea
+    {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border:1px solid #ccc;
+        outline: none;
+        font-size: 15px;
+        transition: 0.3s border-color ease;
+    }
+    
+    .wrapper #form .inputBox input[type="text"]:focus,
+    .wrapper #form .inputBox textarea:focus
+    {
+        border-color: var(--primary-color);
+    }
+    
+    .wrapper #form .inputBox textarea{
+        resize: vertical;
+    }
+    
+    .wrapper .content{
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    .wrapper .content .item{
+        
+        align-items: center;
+        background: var(--primary-color);
+        border-radius: 5px;
+        padding: 10px;
+        color: white;
+        cursor: pointer;
+        margin: 10px 0;
+        transition: 0.3s all ease;
+    }
+    
+    .wrapper .content .item:hover{
+        box-shadow: 0 0 5px var(--primary-color);
+    }
+    
+     .wrapper #form .button{
+    background: white;
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+    width: 110px;
+    color: var(--primary-color);
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    margin: 0 auto;
+    transition: 0.3s all ease;
+    display: block;
+    margin-bottom: 10px;
+    }
+    
+    .wrapper #form .button:hover{
+        background:var(--primary-color);   
+        color:white;
+        border: 1px solid white;
+        
+       
+    }
+
+    .botones{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    :root{
+
+        --primary-color:black;
+    
+    }
+    
+    .item, .inputBox, .textarea
+    
+    {
+        font-family: encabezado;
+        
+    }
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+         }
+    
+    body{
+        /* background:var(--primary-color); */
+        font-family: encabezado,sans-serif;
+    
+    }
+
+    .derecha{
+        display: flex; 
+        width: 30%;
+        margin: 50px auto; 
+           }
+    
+    .seleta1{
+        display: flex;
+        width: 100%;
+        padding: 10px;
+        justify-content: center;
+        background-color:black;
+        border-radius: 5px;
+    }
+
+    .encabe{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        height: 7vh;
+        width: 23vw;
+        border-radius: 5px;
+      }
+
+      .encabe:hover{
+        color:white;
+        background-color: black;
+       border: 1px solid white;
+        transition: 0.3s all ease;
+        
+      }
+
+
+    footer{
+        height: 10vh;
+        background-color: black;
+     } 
+    
+    .nav-link1{
+        background: white;
+        color: black;
+        width: 10%;
+        text-decoration: none;
+        font-size: 2.5vw;
+        height: 8vh;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+ }
+
+ /* Estilos para dispositivos de pantalla mediana */
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .conteiner {
+
+        background-color: aqua;
+
+        }
+
+        }
+
+
+/* Estilos para dispositivos de pantalla grande */
+
+ @media screen and (min-width: 1201px) {
+    
+    header{
+        display: flex;
+        background-color: black;
+        height: 15vh;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .navega{
+        justify-content: flex-end;
+      }
+    
+    @font-face {
+        font-family: encabezado;
+        src: url(Poiret_One/PoiretOne-Regular.ttf);
+    }
+    
+    header .enca{
+        white-space: nowrap;
+        align-items: center;
+        display: flex; 
+    }
+    .logo,.nombre{
+        flex: 1;
+    }
+    .nombre{
+        padding: 10px;
+        display: flex;
+        color: white;
+        font-family: encabezado;
+        font-weight: normal;
+        font-size: 2.5vw;
+    }
+    .logo{
+        height: 10vh;
+        max-height: 100%;
+    }
+    nav{
+        white-space: nowrap;
+        align-items: center;
+        display: flex;
+        flex: 1;   
+    }
+    
+    .idioma{
+        padding: 15px;
+        text-decoration: none;
+        font-weight: normal;
+        font-size: 1.5vw;
+    }
+    .nav-link,.idioma{
+        color: white;
+        font-family: encabezado;
+    }
+    .nav-link{
+        padding-left: 5%;
+        text-decoration: none;
+        font-size: 2.5vw;
+    }
+
+    .nav-link:hover{
+        text-decoration:underline;
+    }
+
+
+    .concat{
+        display: flex;
+        width: 13vw;
+        height: 35vh;
+        border-radius: 50%;
+        object-fit: cover;
+        /* mask-image: radial-gradient(ellipse farthest-corner at 50% 0%, transparent 50%, black 51%); */
+        margin: 10%;
+    }
+
+
+    .Izq{
+        
+        margin: 50px auto;
+        width: 30%;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        border-radius: 5px;
+    }
+
+    .playa{
+        margin: 5%;
+        height: 40vh;
+        border-radius: 10%;
+    }
+
+    .Dere{
+        height: 60vh;
+        width: 70%;
+        margin: 3%;
+        font-family: encabezado;
+        font-weight: bold;
+    }
+
+    .Titulo{
+        height: 20vh;
+        
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenedor{
+        display: flex;
+       justify-content: center;
+        
+    }
+
+    .Titulo h2{
+        
+        display: flex;
+        align-items: center;
+        font-family: encabezado;
+        color: white;
+    }
+
+    .comentario{
+        width: 65vw;
+        height: 15vh;        
+    }
+
+    :root{
+
+        --primary-color:black;
+    
+    }
+    
+    .item, .inputBox, .textarea
+    
+    {
+        font-family: encabezado;
+        
+    }
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+         }
+    
+    body{
+        /* background:var(--primary-color); */
+        font-family: encabezado,sans-serif;
+    
+    }
+    
+    .wrapper{
+        margin: 50px auto;
+        background:black ;
+        color: white;
+        border-radius: 5px;
+        width: 33%;
+        min-height: 300px;
+        padding: 10px;
+    }
+    
+    .cent{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .wrapper #form .inputBox{
+        margin: 10px auto;
+    }
+    
+    .wrapper #form .inputBox input[type="text"],
+    .wrapper #form .inputBox textarea
+    {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border:1px solid #ccc;
+        outline: none;
+        font-size: 15px;
+        transition: 0.3s border-color ease;
+    }
+    
+    .wrapper #form .inputBox input[type="text"]:focus,
+    .wrapper #form .inputBox textarea:focus
+    {
+        border-color: var(--primary-color);
+    }
+    
+    .wrapper #form .inputBox textarea{
+        resize: vertical;
+    }
+    
+    .wrapper .content{
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    .wrapper .content .item{
+        
+        align-items: center;
+        background: var(--primary-color);
+        border-radius: 5px;
+        padding: 10px;
+        color: white;
+        cursor: pointer;
+        margin: 10px 0;
+        transition: 0.3s all ease;
+    }
+    
+    .wrapper .content .item:hover{
+        box-shadow: 0 0 5px var(--primary-color);
+    }
+    
+     .wrapper #form .button{
+    background: white;
+    border: 1px solid var(--primary-color);
+    padding: 10px;
+    width: 110px;
+    color: var(--primary-color);
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    margin: 0 auto;
+    transition: 0.3s all ease;
+    display: block;
+    margin-bottom: 10px;
+    }
+    
+    .wrapper #form .button:hover{
+        background:var(--primary-color);   
+        color:white;
+        border: 1px solid white;
+        
+       
+    }
+    
+    .botones{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .derecha{
+        display: flex; 
+        width: 30%;
+        margin: 50px auto; 
+           }
+    
+    .seleta1{
+        display: flex;
+        width: 100%;
+        padding: 10px;
+        justify-content: center;
+        background-color:black;
+        border-radius: 5px;
+    }
+
+    .encabe{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        height: 7vh;
+        width: 23vw;
+        border-radius: 5px;
+      }
+
+      .encabe:hover{
+        color:white;
+        background-color: black;
+       border: 1px solid white;
+        transition: 0.3s all ease;
+        
+      }
+
+
+    footer{
+        height: 10vh;
+        background-color: black;
+     } 
+    
+    .nav-link1{
+        background: white;
+        color: black;
+        width: 10%;
+        text-decoration: none;
+        font-size: 2.5vw;
+        height: 12vh;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
